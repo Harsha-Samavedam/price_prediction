@@ -9,6 +9,7 @@ from pathlib import Path
 
 from .core import PricePoint, parse_time
 from .replay import ReactionRow, replay_claims
+from .retrieval import HuggingFaceEmbedder, HuggingFaceGenerator, retrieve_details
 from .sources import (Polymarket, gdelt_doc, gdelt_gkg_archive, guardian,
                       mediacloud, newsapi, nyt, rss)
 from .store import Store
@@ -62,10 +63,57 @@ def parser() -> argparse.ArgumentParser:
 
     audit = sub.add_parser("audit", help="Summarize ingested coverage")
     audit.add_argument("--slug", required=True)
+
+    details = sub.add_parser("retrieve-details", help="Retrieve and rank source-backed details")
+    details.add_argument("--slug", required=True)
+    details.add_argument("--cutoff", required=True, help="ISO-8601 timestamp with timezone")
+    details.add_argument("--embedding-model", default="intfloat/multilingual-e5-small",
+                         help="Hugging Face encoder model ID")
+    details.add_argument("--generation-model", default="Qwen/Qwen2.5-1.5B-Instruct",
+                         help="Hugging Face generation model ID")
+    details.add_argument("--bm25-candidates", required=True, type=int)
+    details.add_argument("--dense-candidates", required=True, type=int)
+    details.add_argument("--fusion-k", required=True, type=int)
+    details.add_argument("--max-clusters", required=True, type=int)
+    details.add_argument("--bodies-per-cluster", required=True, type=int)
+    details.add_argument("--article-similarity-threshold", required=True, type=float)
+    details.add_argument("--detail-similarity-threshold", required=True, type=float)
+    details.add_argument("--generation-max-input-tokens", required=True, type=int)
+    details.add_argument("--generation-max-new-tokens", required=True, type=int)
+    details.add_argument("--min-detail-characters", required=True, type=int)
+    details.add_argument("--out", required=True, help="Output JSON path")
     return p
 
 
 def run(args: argparse.Namespace) -> dict:
+    if args.command == "retrieve-details":
+        positive = ("bm25_candidates", "dense_candidates", "fusion_k", "max_clusters",
+                    "bodies_per_cluster", "generation_max_input_tokens",
+                    "generation_max_new_tokens", "min_detail_characters")
+        if any(getattr(args, key) <= 0 for key in positive):
+            raise ValueError("Retrieval limits and token counts must be positive")
+        for key in ("article_similarity_threshold", "detail_similarity_threshold"):
+            if not -1 <= getattr(args, key) <= 1:
+                raise ValueError(f"{key} must be between -1 and 1")
+        embedder = HuggingFaceEmbedder(args.embedding_model)
+        generator = HuggingFaceGenerator(args.generation_model,
+                                        args.generation_max_input_tokens,
+                                        args.generation_max_new_tokens)
+        with Store(args.db) as store:
+            result = retrieve_details(
+                store, args.slug, parse_time(args.cutoff), embedder, generator,
+                bm25_limit=args.bm25_candidates, dense_limit=args.dense_candidates,
+                fusion_k=args.fusion_k, max_clusters=args.max_clusters,
+                bodies_per_cluster=args.bodies_per_cluster,
+                article_similarity_threshold=args.article_similarity_threshold,
+                detail_similarity_threshold=args.detail_similarity_threshold,
+                min_detail_characters=args.min_detail_characters,
+            )
+        out = Path(args.out)
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+        return {"market_slug": args.slug, "candidate_articles": result["candidate_articles"],
+                "details": len(result["details"]), "output": str(out.resolve())}
     with Store(args.db) as store:
         if args.command == "market":
             market = Polymarket().market_by_slug(args.slug)

@@ -14,6 +14,14 @@ from claim_reaction.sources import gdelt_doc, gdelt_gkg_archive, mediacloud
 
 
 class MarketParsingTests(unittest.TestCase):
+    def test_gamma_variable_fractional_timestamp(self):
+        self.assertEqual(parse_time("2026-07-29T18:57:52.6719Z"),
+                         datetime(2026, 7, 29, 18, 57, 52, 671900, tzinfo=timezone.utc))
+
+    def test_gamma_closed_time_hour_offset(self):
+        self.assertEqual(parse_time("2026-06-29 23:47:53+00"),
+                         datetime(2026, 6, 29, 23, 47, 53, tzinfo=timezone.utc))
+
     def test_v1_and_v2_use_the_correct_yes_identifier(self):
         basic = {"slug": "a", "id": "1", "question": "A?",
                  "outcomes": '["No", "Yes"]',

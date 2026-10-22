@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from typing import Any, Optional
@@ -20,7 +21,14 @@ def parse_time(value: Any) -> datetime:
         if len(value) == 14:  # GDELT YYYYMMDDHHMMSS
             return datetime.strptime(value, "%Y%m%d%H%M%S").replace(tzinfo=UTC)
         return datetime.fromtimestamp(int(value), UTC)
-    parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    value = value.replace("Z", "+00:00")
+    # Gamma closedTime values sometimes end in an hour-only UTC offset.
+    value = re.sub(r"([+-]\d{2})$", r"\1:00", value)
+    # Python 3.9 accepts only three or six fractional-second digits here;
+    # Gamma timestamps can have other lengths (for example, four digits).
+    value = re.sub(r"\.(\d{1,5})(?=[+-]\d{2}:\d{2}$)",
+                   lambda match: "." + match.group(1).ljust(6, "0"), value)
+    parsed = datetime.fromisoformat(value)
     if parsed.tzinfo is None:
         raise ValueError(f"Timestamp must include a timezone: {value!r}")
     return parsed.astimezone(UTC)

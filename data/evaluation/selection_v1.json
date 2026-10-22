@@ -1,0 +1,976 @@
+{
+  "queries": [
+    {
+      "query_id": "q01",
+      "market_slug": "scotus-bars-counting-mail-ballots-after-election-day",
+      "cutoff": "2026-06-29T16:00:00Z",
+      "topic": "US election law"
+    },
+    {
+      "query_id": "q02",
+      "market_slug": "will-the-fed-decrease-interest-rates-by-25-bps-after-the-september-2026-meeting-586",
+      "cutoff": "2026-09-12T00:00:00Z",
+      "topic": "US monetary policy"
+    },
+    {
+      "query_id": "q03",
+      "market_slug": "will-the-senate-vote-on-the-clarity-act-before-the-august-recess-20260729185025133",
+      "cutoff": "2026-08-07T19:00:00Z",
+      "topic": "US crypto legislation"
+    },
+    {
+      "query_id": "q04",
+      "market_slug": "will-the-sweden-democrats-sd-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "cutoff": "2026-09-12T12:00:00Z",
+      "topic": "Swedish parliamentary election"
+    },
+    {
+      "query_id": "q05",
+      "market_slug": "strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320",
+      "cutoff": "2026-08-27T12:00:00Z",
+      "topic": "Hormuz shipping"
+    },
+    {
+      "query_id": "q06",
+      "market_slug": "will-maria-corina-machado-enter-venezuela-by-july-31-20260626160132235",
+      "cutoff": "2026-07-31T23:00:00Z",
+      "topic": "Venezuelan politics"
+    }
+  ],
+  "examples": [
+    {
+      "query_id": "q01",
+      "source_id": "https://panow.com/2026/06/24/federal-judge-bars-trump-from-implementing-proof-of-citizenship-requirement-to-vote/",
+      "source": "gdelt-doc",
+      "source_market_slug": "scotus-bars-counting-mail-ballots-after-election-day",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 0,
+        "rationale": "A citizenship requirement is a different legal issue from counting late mail ballots.",
+        "event_group": null,
+        "expected_headline_details": [],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q01",
+      "source_id": "https://wjla.com/question/vote-should-all-ballots-be-counted-by-election-day-question-of-the-day-president-trump-executive-order-proof-of-citizenship-vote-save-america-act-supreme-court-mail-in-ballots",
+      "source": "gdelt-doc",
+      "source_market_slug": "scotus-bars-counting-mail-ballots-after-election-day",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "An opinion poll about counting ballots supplies no court decision.",
+        "event_group": null,
+        "expected_headline_details": [],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q01",
+      "source_id": "https://nypost.com/2026/06/25/us-news/californias-slow-vote-counting-examined-in-report-amid-looming-scotus-decision-on-late-ballots/",
+      "source": "gdelt-doc",
+      "source_market_slug": "scotus-bars-counting-mail-ballots-after-election-day",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "Late-ballot case context, with no ruling asserted.",
+        "event_group": "court-pending",
+        "expected_headline_details": [
+          "California slow vote - counting examined in report amid looming SCOTUS decision on late ballots"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q01",
+      "source_id": "https://www.kolotv.com/2026/06/27/primary-elections-provide-local-election-officials-with-voting-trends/",
+      "source": "gdelt-doc",
+      "source_market_slug": "scotus-bars-counting-mail-ballots-after-election-day",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 0,
+        "rationale": "General primary-election trends do not address the court case.",
+        "event_group": null,
+        "expected_headline_details": [],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q01",
+      "source_id": "https://www.fox13now.com/politics/supreme-court/eight-cases-await-supreme-court-ruling-as-major-opinion-day-arrives-monday",
+      "source": "gdelt-doc",
+      "source_market_slug": "scotus-bars-counting-mail-ballots-after-election-day",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "Supreme Court calendar context; the relevant case is not identified.",
+        "event_group": null,
+        "expected_headline_details": [
+          "Eight cases await Supreme Court ruling as major opinion day arrives Monday"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q01",
+      "source_id": "https://wjbo.iheart.com/content/2026-06-29-supreme-court-upholds-counting-late-mail-in-ballots/",
+      "source": "gdelt-doc",
+      "source_market_slug": "scotus-bars-counting-mail-ballots-after-election-day",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 2,
+        "rationale": "Explicitly reports permission to count late mail ballots.",
+        "event_group": "court-late-ballot-ruling",
+        "expected_headline_details": [
+          "Supreme Court Upholds Counting Late Mail - In Ballots | WJBO Newsradio 1150 AM & 98 . 7 FM"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q01",
+      "source_id": "https://www.wgauradio.com/news/trending/supreme-court-allows-mail-in-ballot-grace-period/O6OTUVONCRCUBMFNRUOG7NYKLQ/",
+      "source": "gdelt-doc",
+      "source_market_slug": "scotus-bars-counting-mail-ballots-after-election-day",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 2,
+        "rationale": "Explicitly reports permission to count late mail ballots.",
+        "event_group": "court-late-ballot-ruling",
+        "expected_headline_details": [
+          "Supreme Court allows counting of mail - in ballots received after Election Day"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q01",
+      "source_id": "https://wtop.com/elections/2026/06/supreme-court-rules-states-can-count-late-arriving-mailed-ballots-rejecting-trump-led-challenge/",
+      "source": "gdelt-doc",
+      "source_market_slug": "scotus-bars-counting-mail-ballots-after-election-day",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 2,
+        "rationale": "Explicitly reports permission to count late mail ballots.",
+        "event_group": "court-late-ballot-ruling",
+        "expected_headline_details": [
+          "Supreme Court rules states can count late - arriving mailed ballots , rejecting Trump - led challenge"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q01",
+      "source_id": "https://kpic.com/news/nation-world/supreme-court-scotus-rejects-president-trump-backed-challenge-to-late-arriving-mail-ballots-elections-republican-led-challenge-fraud",
+      "source": "gdelt-doc",
+      "source_market_slug": "scotus-bars-counting-mail-ballots-after-election-day",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 2,
+        "rationale": "Explicitly reports rejection of the late-ballot challenge.",
+        "event_group": "court-late-ballot-ruling",
+        "expected_headline_details": [
+          "Supreme Court rejects Trump - backed challenge to late - arriving mail ballots"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q01",
+      "source_id": "https://www.columbian.com/news/2026/jun/29/washington-elections-officials-awaiting-u-s-supreme-court-rulings-on-mail-in-ballots/",
+      "source": "gdelt-doc",
+      "source_market_slug": "scotus-bars-counting-mail-ballots-after-election-day",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "Reports anticipation of a mail-ballot ruling, not its result.",
+        "event_group": "court-pending",
+        "expected_headline_details": [
+          "Washington elections officials awaiting U . S . Supreme Court rulings on mail - in ballots"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q02",
+      "source_id": "https://www.fool.com/earnings/call-transcripts/2026/09/09/versabank-vbnk-q3-2026-earnings-call-transcript/?source=iedfolrf0000001",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-fed-decrease-interest-rates-by-25-bps-after-the-september-2026-meeting-586",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 0,
+        "rationale": "A bank earnings call does not itself identify evidence about the September Fed decision.",
+        "event_group": null,
+        "expected_headline_details": [],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q02",
+      "source_id": "https://finance.yahoo.com/economy/policy/articles/fomc-september-2026-odds-rate-201618784.html",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-fed-decrease-interest-rates-by-25-bps-after-the-september-2026-meeting-586",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 2,
+        "rationale": "Reports market expectations for the specific Fed meeting; expectations are not a decision.",
+        "event_group": "fed-hike-odds-50",
+        "expected_headline_details": [
+          "FOMC September 2026 Odds for a Rate Hike Surpass 50 % "
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q02",
+      "source_id": "https://www.aol.com/articles/odds-rate-hike-soaring-ahead-082601000.html",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-fed-decrease-interest-rates-by-25-bps-after-the-september-2026-meeting-586",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 2,
+        "rationale": "Reports rising hike odds for the specific meeting, without a numerical threshold.",
+        "event_group": "fed-hike-odds-unspecified",
+        "expected_headline_details": [
+          "The Odds of a Rate Hike Are Soaring Ahead of the Sept . 16 FOMC Meeting"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q02",
+      "source_id": "http://www.kitco.com/news/article/2026-09-10/gold-price-down-weathering-ecbs-25-basis-point-rate-hike",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-fed-decrease-interest-rates-by-25-bps-after-the-september-2026-meeting-586",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "An ECB hike concerns a different central bank; indirect macro context only.",
+        "event_group": null,
+        "expected_headline_details": [
+          "Gold price down but weathering ECB 25 basis point rate hike"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q02",
+      "source_id": "https://www.theepochtimes.com/business/high-diesel-prices-lift-us-producer-inflation-in-august-6085610",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-fed-decrease-interest-rates-by-25-bps-after-the-september-2026-meeting-586",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "US producer inflation can inform policy expectations but is not a Fed decision.",
+        "event_group": "us-producer-inflation",
+        "expected_headline_details": [
+          "High Diesel Prices Lift US Producer Inflation in August"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q02",
+      "source_id": "https://finance.yahoo.com/economy/policy/articles/fomc-september-2026-odds-rate-163505675.html",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-fed-decrease-interest-rates-by-25-bps-after-the-september-2026-meeting-586",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 2,
+        "rationale": "Reports a later or different 60% hike-odds threshold; not interchangeable with 50%.",
+        "event_group": "fed-hike-odds-60",
+        "expected_headline_details": [
+          "FOMC September 2026 Odds of Rate Hike Surge Over 60 % "
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q02",
+      "source_id": "https://www.winnipegfreepress.com/business/2026/09/10/inflation-report-lands-amid-spiking-oil-prices-rising-interest-rates-and-fed-on-fence",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-fed-decrease-interest-rates-by-25-bps-after-the-september-2026-meeting-586",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "Inflation and interest-rate context without a specific Fed decision.",
+        "event_group": "inflation-preview",
+        "expected_headline_details": [
+          "Inflation report lands amid spiking oil prices , rising interest rates and Fed on fence – Winnipeg Free Press"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q02",
+      "source_id": "https://isp.netscape.com:443/pf/story/0001/20260911/c76f53f7a53def0c464ca44ac637f203",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-fed-decrease-interest-rates-by-25-bps-after-the-september-2026-meeting-586",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "Same inflation-preview headline from another source.",
+        "event_group": "inflation-preview",
+        "expected_headline_details": [
+          "Inflation report lands amid spiking oil prices , rising interest rates and Fed on fence"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q02",
+      "source_id": "https://www.bostonherald.com/2026/09/11/inflation-report-august-fed/",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-fed-decrease-interest-rates-by-25-bps-after-the-september-2026-meeting-586",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "Reports inflation drivers that may affect policy expectations.",
+        "event_group": "us-consumer-inflation",
+        "expected_headline_details": [
+          "Inflation picked up last month as gas prices jumped amid Iran war"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q02",
+      "source_id": "https://www.newsweek.com/fed-interest-rate-prediction-inflation-cpi-ppi-12423072",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-fed-decrease-interest-rates-by-25-bps-after-the-september-2026-meeting-586",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 2,
+        "rationale": "Explicit prediction of no cut next week; retain attribution as a prediction.",
+        "event_group": "fed-no-cut-prediction",
+        "expected_headline_details": [
+          "Experts Predict No Fed Rate Cut Next Week : What It Means"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q03",
+      "source_id": "https://www.hngn.com/articles/272531/20260802/trump-says-hell-halt-planned-iran-strikes-citing-deal-hormuz-reopening-nuclear-threat.htm",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-senate-vote-on-the-clarity-act-before-the-august-recess-20260729185025133",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 0,
+        "rationale": "Iran negotiations are unrelated to the CLARITY Act vote.",
+        "event_group": null,
+        "expected_headline_details": [],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q03",
+      "source_id": "https://www.sentinelandenterprise.com/2026/08/03/beacon-hill-roll-call-house-and-senate-pass-abortion-bill-and-protect-act/",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-senate-vote-on-the-clarity-act-before-the-august-recess-20260729185025133",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 0,
+        "rationale": "A state legislature and different bills; lexical Senate overlap is misleading.",
+        "event_group": null,
+        "expected_headline_details": [],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q03",
+      "source_id": "https://finance.yahoo.com/markets/crypto/articles/brian-armstrong-isnt-losing-sleep-100030292.html",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-senate-vote-on-the-clarity-act-before-the-august-recess-20260729185025133",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "CEO commentary about passage; passage and holding a floor vote are distinct.",
+        "event_group": null,
+        "expected_headline_details": [
+          "Brian Armstrong Isnt Losing Sleep Over Crypto Act Not Passing Before August Recess : Here Why the Coinbase CEO Isnt Worried"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q03",
+      "source_id": "https://finance.yahoo.com/markets/crypto/articles/scott-bessent-presses-senate-floor-203018044.html",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-senate-vote-on-the-clarity-act-before-the-august-recess-20260729185025133",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "Advocacy and floor-readiness claims are context, not a scheduled vote.",
+        "event_group": null,
+        "expected_headline_details": [
+          "Scott Bessent Presses Senate On  Floor - Ready  CLARITY Act , Tom Lee Agrees :  This Needs to Be Passed  "
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q03",
+      "source_id": "https://www.ibtimes.com/clarity-act-biggest-crypto-bill-us-history-stalling-trumps-wallet-why-3806063",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-senate-vote-on-the-clarity-act-before-the-august-recess-20260729185025133",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "Reports legislative stalling, but no explicit vote timing.",
+        "event_group": null,
+        "expected_headline_details": [
+          "Clarity Act : The Biggest Crypto Bill in US History Is Stalling , and Trump Wallet Is Why"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q03",
+      "source_id": "https://www.rstreet.org/commentary/how-the-clarity-act-can-combat-mixer-fraud/",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-senate-vote-on-the-clarity-act-before-the-august-recess-20260729185025133",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "Policy rationale for the bill, not vote scheduling.",
+        "event_group": null,
+        "expected_headline_details": [
+          "How The CLARITY Act Can Combat Mixer Fraud - R Street Institute"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q03",
+      "source_id": "https://investinglive.com/cryptocurrency/crypto-news-us-senate-pushes-clarity-act-crypto-vote-to-september-as-recess-nears/",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-senate-vote-on-the-clarity-act-before-the-august-recess-20260729185025133",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 2,
+        "rationale": "Explicitly reports vote postponement to September.",
+        "event_group": "clarity-delay",
+        "expected_headline_details": [
+          "Crypto news - US Senate pushes CLARITY Act crypto vote to September as recess nears"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q03",
+      "source_id": "https://www.erienewsnow.com/news/washington-dc/senate-races-to-reach-deal-on-clarity-act-before-august-recess/article_35694e7b-6496-5b12-9fd7-72bedb24b38a.html",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-senate-vote-on-the-clarity-act-before-the-august-recess-20260729185025133",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 2,
+        "rationale": "Explicitly discusses negotiations before the recess, without asserting a vote occurred.",
+        "event_group": "clarity-negotiations",
+        "expected_headline_details": [
+          "Senate Races to Reach Deal on Clarity Act Before August Recess"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q03",
+      "source_id": "https://www.investors.com/news/clarity-act-senate-vote-recess-deadline-cryptocurrency-market-structure-bitcoin/",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-senate-vote-on-the-clarity-act-before-the-august-recess-20260729185025133",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 2,
+        "rationale": "Explicitly reports a vote delay beyond summer recess.",
+        "event_group": "clarity-delay",
+        "expected_headline_details": [
+          "Clarity Act Hopes Dive As Senate Delays Vote Until After Summer Recess"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q03",
+      "source_id": "https://www.investors.com:443/news/clarity-act-senate-vote-recess-deadline-cryptocurrency-market-structure-bitcoin/",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-senate-vote-on-the-clarity-act-before-the-august-recess-20260729185025133",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 2,
+        "rationale": "Same vote-delay headline from another source.",
+        "event_group": "clarity-delay",
+        "expected_headline_details": [
+          "Clarity Act Hopes Dive As Senate Delays Vote Until After Summer Recess"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q04",
+      "source_id": "https://www.expressen.se/nyheter/sverige/liberalerna-narmar-sig-sparren-i-ny-matning/",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-sweden-democrats-sd-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "Swedish headline: Liberals approach the electoral threshold in a new poll; contextual to seat allocation.",
+        "event_group": null,
+        "expected_headline_details": [
+          "Liberalerna närmar sig spärren i ny mätning"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q04",
+      "source_id": "https://www.irishtimes.com/opinion/editorials/2026/09/07/the-irish-times-view-on-the-german-state-elections-landmark-win-for-the-far-right/",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-sweden-democrats-sd-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 0,
+        "rationale": "German state elections concern a different country and contest.",
+        "event_group": null,
+        "expected_headline_details": [],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q04",
+      "source_id": "https://www.freemalaysiatoday.com/category/world/2026/09/08/sweden-heads-to-the-polls-in-close-election-race",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-sweden-democrats-sd-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "A close Swedish election is contextual; no party-specific seat lead is stated.",
+        "event_group": "sweden-close-preview",
+        "expected_headline_details": [
+          "Sweden heads to the polls in close election race"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q04",
+      "source_id": "https://www.standardmedia.co.ke/world/article/2001557255/sweden-heads-to-the-polls-in-close-election-race",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-sweden-democrats-sd-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "Same close-election preview from another source.",
+        "event_group": "sweden-close-preview",
+        "expected_headline_details": [
+          "Sweden heads to the polls in close election race"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q04",
+      "source_id": "https://www.thelocal.se/20260909/listen-what-are-the-sweden-democrats-plans-for-immigrants-in-sweden",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-sweden-democrats-sd-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "Sweden Democrats policy platform does not establish their seat ranking.",
+        "event_group": null,
+        "expected_headline_details": [],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q04",
+      "source_id": "https://cyprus-mail.com/2026/09/10/sweden-election-puts-far-rights-role-in-government-to-the-test",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-sweden-democrats-sd-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "Potential government participation is not winning the most seats.",
+        "event_group": null,
+        "expected_headline_details": [
+          "Sweden election puts far - right government role to test"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q04",
+      "source_id": "https://www.winnipegfreepress.com/world/2026/09/11/what-to-know-about-sundays-election-in-sweden-natos-newest-member",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-sweden-democrats-sd-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "Election explainer; headline contains no party-specific polling result.",
+        "event_group": "sweden-explainer",
+        "expected_headline_details": [],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q04",
+      "source_id": "https://www.niagarafallsreview.ca/news/world/europe/what-to-know-about-sunday-s-election-in-sweden-nato-s-newest-member/article_d36744ef-1f33-5d05-b9b2-b28407e3d3df.html",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-sweden-democrats-sd-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "Same election-explainer headline from another source.",
+        "event_group": "sweden-explainer",
+        "expected_headline_details": [],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q04",
+      "source_id": "https://www.aol.co.uk/articles/sweden-extremely-close-election-could-050030000.html",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-sweden-democrats-sd-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "A close election and possible government role do not establish most seats.",
+        "event_group": "sweden-government-preview",
+        "expected_headline_details": [
+          "Sweden extremely close election could see far right enter government"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q04",
+      "source_id": "https://www.theguardian.com/world/2026/sep/12/sweden-extremely-close-election-could-see-far-right-enter-government",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-the-sweden-democrats-sd-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "Same close-election government-role preview.",
+        "event_group": "sweden-government-preview",
+        "expected_headline_details": [
+          "Sweden extremely close election could see far right enter government | Sweden"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q05",
+      "source_id": "https://www.upi.com/Top_News/World-News/2026/08/24/oman-Hormuz-tanker-attacked/9311787626785/",
+      "source": "gdelt-doc",
+      "source_market_slug": "strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 2,
+        "rationale": "A disabled tanker near the strait is direct shipping-disruption evidence.",
+        "event_group": "hormuz-tanker",
+        "expected_headline_details": [
+          "Projectile strikes , disables tanker near Strait of Hormuz"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q05",
+      "source_id": "https://economictimes.indiatimes.com/news/defence/trump-says-all-mines-removed-from-strait-of-hormuz-warns-iran-against-new-placements/articleshow/133515678.cms",
+      "source": "gdelt-doc",
+      "source_market_slug": "strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 2,
+        "rationale": "Attributed mine-clearance claim bears on shipping; it does not verify normal traffic.",
+        "event_group": "hormuz-mines-claim",
+        "expected_headline_details": [
+          "Trump says all mines removed from Strait of Hormuz , warns Iran against new placements"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q05",
+      "source_id": "https://kfdm.com/news/nation-world/president-donald-trump-says-strait-of-hormuz-mines-cleared-warns-iran-against-planting-more-international-strategic-waterway-space-force-monitoring-vessel-strikes-oil-shipments",
+      "source": "gdelt-doc",
+      "source_market_slug": "strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 2,
+        "rationale": "Same attributed mine-clearance claim.",
+        "event_group": "hormuz-mines-claim",
+        "expected_headline_details": [
+          "Trump says Hormuz mines cleared , warns Iran against planting more"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q05",
+      "source_id": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2869419-outbound-hormuz-transits-drop-to-zero",
+      "source": "gdelt-doc",
+      "source_market_slug": "strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 2,
+        "rationale": "Explicit traffic measurement: outbound transits reported at zero.",
+        "event_group": "hormuz-zero-transits",
+        "expected_headline_details": [
+          "Outbound Hormuz transits drop to zero | Latest Market News"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q05",
+      "source_id": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2869533-outbound-hormuz-transits-drop-to-zero-update",
+      "source": "gdelt-doc",
+      "source_market_slug": "strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 2,
+        "rationale": "Updated zero-transits report; headline duplicates the core claim but body may add details.",
+        "event_group": "hormuz-zero-transits",
+        "expected_headline_details": [
+          "Outbound Hormuz transits drop to zero : Update | Latest Market News"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q05",
+      "source_id": "https://nypost.com/2026/08/25/world-news/iran-oman-reach-agreement-to-temporarily-reopen-strait-of-hormuz/",
+      "source": "gdelt-doc",
+      "source_market_slug": "strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 2,
+        "rationale": "Reports a temporary reopening agreement, not verified normal traffic.",
+        "event_group": "hormuz-reopen-agreement",
+        "expected_headline_details": [
+          "Iran , Oman reach agreement to temporarily reopen Strait of Hormuz"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q05",
+      "source_id": "https://www.israelnationalnews.com/news/432235",
+      "source": "gdelt-doc",
+      "source_market_slug": "strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 2,
+        "rationale": "Attributed continued-closure statement; retain attribution.",
+        "event_group": "hormuz-closure-vow",
+        "expected_headline_details": [
+          "Iran vows Strait of Hormuz will remain closed , warns of preemptive action"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q05",
+      "source_id": "https://aninews.in/news/world/middle-east/not-open-tomorrow-iran-fm-says-temporary-oman-route-isnt-strait-of-hormuz-reopening20260826041951/",
+      "source": "gdelt-doc",
+      "source_market_slug": "strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 2,
+        "rationale": "Attributed distinction between a temporary route and a strait reopening.",
+        "event_group": "hormuz-route-clarification",
+        "expected_headline_details": [
+          "  Not open tomorrow : Iran FM says temporary Oman route isnt Strait of Hormuz reopening"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q05",
+      "source_id": "https://economictimes.indiatimes.com/news/international/world-news/not-open-tomorrow-iran-fm-gharibabadi-says-temporary-oman-route-isnt-strait-of-hormuz-reopening/articleshow/133527528.cms",
+      "source": "gdelt-doc",
+      "source_market_slug": "strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 2,
+        "rationale": "Same temporary-route clarification from another source.",
+        "event_group": "hormuz-route-clarification",
+        "expected_headline_details": [
+          "  Not open tomorrow : Iran FM Gharibabadi says temporary Oman route isnt Strait of Hormuz reopening"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q05",
+      "source_id": "https://oilprice.com/Latest-Energy-News/World-News/Qatar-and-Kuwait-Restore-70-of-Pre-War-Oil-Exports-Through-Hormuz.html",
+      "source": "gdelt-doc",
+      "source_market_slug": "strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 2,
+        "rationale": "Reported partial export recovery is relevant but does not establish normal total traffic.",
+        "event_group": "hormuz-export-recovery",
+        "expected_headline_details": [
+          "Qatar and Kuwait Restore 70 % of Pre - War Oil Exports Through Hormuz"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q06",
+      "source_id": "https://www.scmp.com/news/world/americas/article/3361923/venezuela-opposition-leader-machado-says-she-will-not-take-part-us-backed-talks",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-maria-corina-machado-enter-venezuela-by-july-31-20260626160132235",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "Participation in talks does not establish Machado physical location or entry.",
+        "event_group": "machado-talks-refusal",
+        "expected_headline_details": [
+          "Venezuela opposition leader Machado says she will not take part in US - backed talks"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q06",
+      "source_id": "https://www.hindustantimes.com/world-news/will-not-participate-nobel-laureate-machado-rejects-us-backed-venezuela-talks-101785123928431.html",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-maria-corina-machado-enter-venezuela-by-july-31-20260626160132235",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "Same refusal of talks; no statement of physical entry.",
+        "event_group": "machado-talks-refusal",
+        "expected_headline_details": [
+          "  Will not participate : Nobel laureate Machado rejects US - backed Venezuela talks"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q06",
+      "source_id": "https://www.alquds.com/ar/posts/251533",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-maria-corina-machado-enter-venezuela-by-july-31-20260626160132235",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "Arabic headline: Machado boycotts government-opposition dialogue in Venezuela; attendance refusal does not establish location.",
+        "event_group": "machado-talks-refusal",
+        "expected_headline_details": [
+          "ماتشادو تقاطع حوار الحكومة والمعارضة في فنزويلا"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q06",
+      "source_id": "https://roarnews.co.uk/2026/venezuelas-earthquake-is-undeniably-political/",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-maria-corina-machado-enter-venezuela-by-july-31-20260626160132235",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": null,
+        "rationale": "Ambiguous metaphorical headline; body is needed to assess relevance.",
+        "event_group": null,
+        "expected_headline_details": [],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q06",
+      "source_id": "https://www.cubaheadlines.com/articles/336505",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-maria-corina-machado-enter-venezuela-by-july-31-20260626160132235",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "Attributed transition statement says nothing about physical entry.",
+        "event_group": null,
+        "expected_headline_details": [
+          "Maria Corina Machado Declares Venezuela Transition is Underway"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q06",
+      "source_id": "https://www.wlrn.org/commentary/2026-07-30/odyssey-maria-corina-machado-venezuela-trump",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-maria-corina-machado-enter-venezuela-by-july-31-20260626160132235",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "An exile-related question, not a verifiable arrival assertion.",
+        "event_group": null,
+        "expected_headline_details": [],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q06",
+      "source_id": "https://www.bssnews.net/international/410434",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-maria-corina-machado-enter-venezuela-by-july-31-20260626160132235",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "Talks without Machado do not establish her location.",
+        "event_group": "venezuela-talks-preview",
+        "expected_headline_details": [
+          "Venezuela transition talks set to kick off without Machado"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q06",
+      "source_id": "https://fpif.org/a-new-cuban-economy/",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-maria-corina-machado-enter-venezuela-by-july-31-20260626160132235",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 0,
+        "rationale": "Cuban economy headline addresses a different country and issue.",
+        "event_group": null,
+        "expected_headline_details": [],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q06",
+      "source_id": "https://www.abc.net.au/news/2026-08-01/how-trump-administration-now-runs-venezuela/106980648",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-maria-corina-machado-enter-venezuela-by-july-31-20260626160132235",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "Venezuelan political-economic context, not Machado travel.",
+        "event_group": null,
+        "expected_headline_details": [
+          "Washington controls Venezuela and its money , raising questions over seized oil billions"
+        ],
+        "directional_strength_target": null
+      }
+    },
+    {
+      "query_id": "q06",
+      "source_id": "https://www.aljazeera.com/news/2026/7/31/venezuela-govt-and-opposition-to-hold-talks-aimed-at-path-to-elections",
+      "source": "gdelt-doc",
+      "source_market_slug": "will-maria-corina-machado-enter-venezuela-by-july-31-20260626160132235",
+      "annotation": {
+        "review_status": "draft_assistant",
+        "headline_relevance": 1,
+        "rationale": "Talks announcement without information about Machado physical entry.",
+        "event_group": "venezuela-talks-preview",
+        "expected_headline_details": [
+          "Venezuela government and opposition to hold talks aimed at path to election"
+        ],
+        "directional_strength_target": null
+      }
+    }
+  ]
+}

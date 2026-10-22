@@ -51,6 +51,28 @@ CREATE TABLE IF NOT EXISTS claims (
     article_url TEXT
 );
 CREATE INDEX IF NOT EXISTS idx_claims_market_time ON claims(market_slug, available_at);
+CREATE TABLE IF NOT EXISTS article_index (
+    url TEXT PRIMARY KEY,
+    title TEXT NOT NULL,
+    first_seen_at TEXT NOT NULL,
+    first_collected_at TEXT NOT NULL,
+    source TEXT NOT NULL
+);
+CREATE VIRTUAL TABLE IF NOT EXISTS article_fts USING fts5(
+    url UNINDEXED, title, tokenize='unicode61'
+);
+CREATE TABLE IF NOT EXISTS article_embeddings (
+    url TEXT NOT NULL,
+    model_id TEXT NOT NULL,
+    title TEXT NOT NULL,
+    vector_json TEXT NOT NULL,
+    PRIMARY KEY (url, model_id)
+);
+CREATE TABLE IF NOT EXISTS article_bodies (
+    url TEXT PRIMARY KEY,
+    fetched_at TEXT NOT NULL,
+    body TEXT NOT NULL
+);
 """
 
 

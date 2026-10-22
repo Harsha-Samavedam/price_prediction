@@ -1,0 +1,53 @@
+{
+  "counts": {
+    "body_failed": 5,
+    "body_fetched": 55,
+    "body_reviewed": 22,
+    "body_skipped": 0,
+    "body_unreviewed": 33,
+    "detail_examples": 26,
+    "documents": 60,
+    "duplicate_pairs": 22,
+    "headline_snapshots_unverified": 60,
+    "judgments": 60,
+    "point_in_time_eligible_judgments": 0,
+    "queries": 6,
+    "unique_urls": 60
+  },
+  "created_at": "2026-10-22T02:57:40.178930Z",
+  "evaluation_scope": {
+    "body_completeness": "Successful fetch means extracted text is available; previews, truncated pages, and incomplete extraction may be present.",
+    "body_labels": "22 fetched bodies reviewed; other body relevance is null/unjudged, not negative. Body details are partial target examples, not exhaustive coverage.",
+    "comparison": "Use one fixed document pool for BM25-only, embedding-only, and hybrid comparisons; unjudged query-document pairs must not be treated as negatives. This artifact does not run those comparisons.",
+    "directional_strength": "No numeric evidence-strength or future-price targets have been invented.",
+    "duplicate_labels": "same_core_claim applies to the specified headline or body detail only; it does not mean whole documents are interchangeable or independently corroborated. Event groups are provisional topic/event metadata, not duplicate ground truth.",
+    "headline_detail_scope": "Headline spans are partial source-claim examples and may contain compound claims; only body details have explicit offsets.",
+    "headline_labels": "Apply only to headline snapshots, not fetched article bodies.",
+    "historical_headlines": "All selected headline snapshots were collected after their query cutoffs. Provider observation time is not proof that this exact title was available at that cutoff.",
+    "labels": "Assistant draft annotations for review; not human-verified ground truth and not verification of publisher claims.",
+    "recall": "No recall claim outside the judged pool.",
+    "selection": "Curated sample; not representative of the full news pool.",
+    "splits": "No training or test split is implied.",
+    "unlisted_pairs": "Unjudged; not negative examples."
+  },
+  "files_sha256": {
+    "details.jsonl": "1735f4f0e0634155fccc0c7912e63f679ea269ab395823b74ae617e8105b2671",
+    "documents.jsonl": "a500300ace1cc219fa77a80c76e35da7a19585159097ed20f5ed0187476c9d99",
+    "duplicate_pairs.jsonl": "67d425e59fdca14873e3f6fc604c0959da2d4e90cfd1796003e446856c7d3d00",
+    "judgments.jsonl": "29adf51ff26e6ef44dc204888865fc7cbf731e4489b7136bd93752751b426c8a",
+    "queries.jsonl": "96294c8618c0fde9a523a98b9e293d979a12aa2bba012a07c6221ba476056825"
+  },
+  "label_rubric": {
+    "offsets": "Python Unicode character offsets, start inclusive/end exclusive, into exact saved body.",
+    "relevance": {
+      "0": "Unrelated to the specific target event/actor, including misleading lexical overlap.",
+      "1": "Contextual: related topic but no direct evidence on the target claim.",
+      "2": "Direct: reported facts, expectations, plans, or statements bearing on the target claim; does not imply truth or sufficient resolution.",
+      "null": "Unjudged or uncertain; never treat as zero."
+    },
+    "review_status": "draft_assistant requires user review before treating labels as ground truth."
+  },
+  "schema_version": 1,
+  "selection_sha256": "d05c7d28df1d8226199253b419c5b0949bd6043fba999c65e2e27fa085f3e37e",
+  "source_database_sha256": "af64a4b54dff0cf93f5366095077ee930783386d449a78f02a55478a350b3c3d"
+}
