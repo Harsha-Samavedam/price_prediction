@@ -1,0 +1,12 @@
+{
+  "label": "retrospective_body_sensitivity",
+  "retrospective": true,
+  "time_basis": "each snapshot event retained; its article body fetched retrospectively",
+  "headline_links": 7966,
+  "candidate_links": 7966,
+  "substituted_links": 176,
+  "without_matching_first_report_body": 7790,
+  "non_candidate_links": 0,
+  "output": "/Users/harshasamavedam/Documents/Codex/2026-10-20/und/work/data/historical_graph_link_scores_complete_085_all_body_v2.jsonl",
+  "counts_output": "/Users/harshasamavedam/Documents/Codex/2026-10-20/und/work/data/historical_body_sensitivity_counts_complete_085_all_v2.json"
+}

@@ -247,6 +247,7 @@ class HuggingFaceGenerator:
         except ImportError as exc:
             raise RuntimeError("Install torch and transformers for local generation") from exc
         self.torch = torch
+        self.model_id = model_id
         self.tokenizer = AutoTokenizer.from_pretrained(model_id)
         config = AutoConfig.from_pretrained(model_id)
         self.encoder_decoder = bool(config.is_encoder_decoder)

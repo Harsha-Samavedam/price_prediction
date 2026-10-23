@@ -1,0 +1,55 @@
+{
+  "method": "Reviewable real-world topic groups for held-out backtests; membership is assigned from market questions without using news or price outcomes.",
+  "groups": {
+    "iran_regional_crisis": {
+      "rationale": "Iran conflict, blockade, airspace, regime, and Strait of Hormuz outcomes may react to the same reports.",
+      "markets": [
+        "israel-closes-its-airspace-by-september-30",
+        "strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320",
+        "us-announces-end-of-iranian-blockade-by-september-30-2026-20260727171615364-722-649-646-561-213-644-414-831",
+        "us-x-iran-effective-ceasefire-by-september-4",
+        "will-the-iranian-regime-fall-by-september-30-20260629143335077"
+      ]
+    },
+    "ukraine_war_politics": {
+      "rationale": "Ukraine ceasefire and election prospects may share developments in the Russia-Ukraine war.",
+      "markets": [
+        "russia-x-ukraine-ceasefire-agreement-by-august-31-2026",
+        "ukraine-election-called-by-august-31-2026"
+      ]
+    },
+    "fed_rate_decisions": {
+      "rationale": "Federal Reserve rate decisions can share inflation and monetary-policy reporting.",
+      "markets": [
+        "will-the-fed-decrease-interest-rates-by-25-bps-after-the-september-2026-meeting-586",
+        "will-there-be-no-change-in-fed-interest-rates-after-the-july-2026-meeting"
+      ]
+    },
+    "german_state_elections": {
+      "rationale": "German state-election reporting may mention both parties and contests.",
+      "markets": [
+        "will-afd-win-the-most-seats-in-the-2026-berlin-state-elections",
+        "will-cdu-win-the-most-seats-in-the-2026-sachsen-anhalt-parliamentary-elections"
+      ]
+    },
+    "us_2026_primaries": {
+      "rationale": "US 2026 nomination reporting may cover multiple primary contests.",
+      "markets": [
+        "will-francesca-hong-win-the-2026-wisconsin-governor-democratic-primary-election",
+        "will-james-fishback-be-the-republican-nominee-for-florida-governor",
+        "will-peggy-flanagan-be-the-democratic-nominee-for-senate-in-minnesota"
+      ]
+    },
+    "scotus_mail_ballots": {"rationale": "Distinct Supreme Court ballot-counting case.", "markets": ["scotus-bars-counting-mail-ballots-after-election-day"]},
+    "us_yemen_ceasefire": {"rationale": "Distinct US-Yemen ceasefire outcome.", "markets": ["us-x-yemen-ceasefire-continues-through-october-15"]},
+    "netherlands_cabinet": {"rationale": "Distinct Netherlands cabinet formation outcome.", "markets": ["will-a-new-cabinet-of-the-netherlands-be-sworn-in-by-june-30-2026-492"]},
+    "taiwan_invasion": {"rationale": "Distinct Taiwan invasion outcome.", "markets": ["will-china-invade-taiwan-by-september-30-2026"]},
+    "brazil_presidential": {"rationale": "Distinct Brazil presidential election outcome.", "markets": ["will-lula-win-the-most-votes-in-the-first-round-of-the-2026-brazil-presidential-election"]},
+    "venezuela_machado": {"rationale": "Distinct Machado travel outcome.", "markets": ["will-maria-corina-machado-enter-venezuela-by-july-31-20260626160132235"]},
+    "clacton_election": {"rationale": "Distinct Clacton by-election outcome.", "markets": ["will-nigel-farage-win-the-clacton-by-election-20260707144027825"]},
+    "quebec_election": {"rationale": "Distinct Quebec general-election outcome.", "markets": ["will-parti-qubcois-win-the-most-seats-in-the-2026-quebec-general-election"]},
+    "clarity_act": {"rationale": "Distinct US Senate CLARITY Act vote outcome.", "markets": ["will-the-senate-vote-on-the-clarity-act-before-the-august-recess-20260729185025133"]},
+    "sweden_election": {"rationale": "Distinct Swedish parliamentary election outcome.", "markets": ["will-the-sweden-democrats-sd-win-the-most-seats-in-the-2026-swedish-parliamentary-election"]},
+    "russia_parliamentary": {"rationale": "Distinct Russian parliamentary election outcome.", "markets": ["will-united-russia-er-gain-the-most-seats-in-the-next-russian-parliamentary-election"]}
+  }
+}

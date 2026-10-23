@@ -1,0 +1,12 @@
+{
+  "label": "retrospective_body_sensitivity",
+  "retrospective": true,
+  "time_basis": "first-report chronology retained; article bodies fetched retrospectively",
+  "headline_links": 1379,
+  "candidate_links": 1379,
+  "substituted_links": 45,
+  "without_matching_first_report_body": 1334,
+  "non_candidate_links": 0,
+  "output": "/Users/harshasamavedam/Documents/Codex/2026-10-20/und/work/data/historical_graph_link_scores_085_body_sensitivity.jsonl",
+  "counts_output": "/Users/harshasamavedam/Documents/Codex/2026-10-20/und/work/data/historical_body_sensitivity_counts_085.json"
+}

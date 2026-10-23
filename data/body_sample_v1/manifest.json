@@ -1,0 +1,87 @@
+{
+  "counts": {
+    "body_failed": 24,
+    "body_fetched": 175,
+    "retrospective_bodies": 176
+  },
+  "coverage": {
+    "markets_with_selected_pairs": 20,
+    "reused_urls": 4,
+    "selected_pairs": 200,
+    "unique_urls_fetched": 199
+  },
+  "created_at": "2026-10-23T00:33:50.584019Z",
+  "files_sha256": {
+    "documents.jsonl": "38cabed4f2c928dc1172f72cd4f64c4e9462fb2972713ab178515dbcf40672a5"
+  },
+  "provenance": {
+    "body_fetcher": "claim_reaction.retrieval.fetch_article_body",
+    "body_retrospective_rule": "true when body_fetched_at is later than provider_seen_at",
+    "eligibility_source": "claim_reaction.forecast.load_forecast_rows; rows with a reaction label are eligible",
+    "horizons_minutes": [
+      60,
+      1440
+    ],
+    "retries": 2,
+    "reused_body_source": "/Users/harshasamavedam/Documents/Codex/2026-10-20/und/work/data/evaluation/starter_v1/documents.jsonl",
+    "reused_body_source_sha256": "a500300ace1cc219fa77a80c76e35da7a19585159097ed20f5ed0187476c9d99",
+    "selection": "Allocate pairs evenly across sorted markets; within each market, select evenly spaced observations spanning provider time. Outcomes not read.",
+    "source_database": "/Users/harshasamavedam/Documents/Codex/2026-10-20/und/work/data/political_25.sqlite",
+    "source_database_sha256": "af64a4b54dff0cf93f5366095077ee930783386d449a78f02a55478a350b3c3d",
+    "workers": 4
+  },
+  "schema_version": 1,
+  "selection": {
+    "eligible_labeled_pairs": 1707,
+    "eligible_pairs_by_market": {
+      "russia-x-ukraine-ceasefire-agreement-by-august-31-2026": 2,
+      "strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320": 237,
+      "ukraine-election-called-by-august-31-2026": 10,
+      "us-announces-end-of-iranian-blockade-by-september-30-2026-20260727171615364-722-649-646-561-213-644-414-831": 140,
+      "us-x-iran-effective-ceasefire-by-september-4": 6,
+      "us-x-yemen-ceasefire-continues-through-october-15": 19,
+      "will-a-new-cabinet-of-the-netherlands-be-sworn-in-by-june-30-2026-492": 10,
+      "will-afd-win-the-most-seats-in-the-2026-berlin-state-elections": 6,
+      "will-cdu-win-the-most-seats-in-the-2026-sachsen-anhalt-parliamentary-elections": 244,
+      "will-china-invade-taiwan-by-september-30-2026": 3,
+      "will-francesca-hong-win-the-2026-wisconsin-governor-democratic-primary-election": 161,
+      "will-james-fishback-be-the-republican-nominee-for-florida-governor": 39,
+      "will-maria-corina-machado-enter-venezuela-by-july-31-20260626160132235": 3,
+      "will-nigel-farage-win-the-clacton-by-election-20260707144027825": 41,
+      "will-peggy-flanagan-be-the-democratic-nominee-for-senate-in-minnesota": 170,
+      "will-the-fed-decrease-interest-rates-by-25-bps-after-the-september-2026-meeting-586": 165,
+      "will-the-iranian-regime-fall-by-september-30-20260629143335077": 207,
+      "will-the-senate-vote-on-the-clarity-act-before-the-august-recess-20260729185025133": 33,
+      "will-the-sweden-democrats-sd-win-the-most-seats-in-the-2026-swedish-parliamentary-election": 192,
+      "will-there-be-no-change-in-fed-interest-rates-after-the-july-2026-meeting": 19
+    },
+    "forecast_exclusions": {
+      "after_market_end": 1015,
+      "missing_market_end_date": 0,
+      "no_price_label": 961
+    },
+    "selected_pairs_by_market": {
+      "russia-x-ukraine-ceasefire-agreement-by-august-31-2026": 2,
+      "strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320": 13,
+      "ukraine-election-called-by-august-31-2026": 10,
+      "us-announces-end-of-iranian-blockade-by-september-30-2026-20260727171615364-722-649-646-561-213-644-414-831": 13,
+      "us-x-iran-effective-ceasefire-by-september-4": 6,
+      "us-x-yemen-ceasefire-continues-through-october-15": 13,
+      "will-a-new-cabinet-of-the-netherlands-be-sworn-in-by-june-30-2026-492": 10,
+      "will-afd-win-the-most-seats-in-the-2026-berlin-state-elections": 6,
+      "will-cdu-win-the-most-seats-in-the-2026-sachsen-anhalt-parliamentary-elections": 13,
+      "will-china-invade-taiwan-by-september-30-2026": 3,
+      "will-francesca-hong-win-the-2026-wisconsin-governor-democratic-primary-election": 12,
+      "will-james-fishback-be-the-republican-nominee-for-florida-governor": 12,
+      "will-maria-corina-machado-enter-venezuela-by-july-31-20260626160132235": 3,
+      "will-nigel-farage-win-the-clacton-by-election-20260707144027825": 12,
+      "will-peggy-flanagan-be-the-democratic-nominee-for-senate-in-minnesota": 12,
+      "will-the-fed-decrease-interest-rates-by-25-bps-after-the-september-2026-meeting-586": 12,
+      "will-the-iranian-regime-fall-by-september-30-20260629143335077": 12,
+      "will-the-senate-vote-on-the-clarity-act-before-the-august-recess-20260729185025133": 12,
+      "will-the-sweden-democrats-sd-win-the-most-seats-in-the-2026-swedish-parliamentary-election": 12,
+      "will-there-be-no-change-in-fed-interest-rates-after-the-july-2026-meeting": 12
+    },
+    "target_count": 200
+  }
+}

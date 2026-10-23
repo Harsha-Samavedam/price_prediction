@@ -64,6 +64,19 @@ def parser() -> argparse.ArgumentParser:
     audit = sub.add_parser("audit", help="Summarize ingested coverage")
     audit.add_argument("--slug", required=True)
 
+    observe = sub.add_parser("observe", help="Collect live RSS and public YES-market events")
+    observe.add_argument("--slug", action="append", required=True,
+                         help="Active binary market slug; repeat for multiple markets")
+    observe.add_argument("--feed-url", action="append",
+                         help="RSS/Atom URL; repeat to replace the default Federal Reserve and Senate feeds")
+    observe.add_argument("--duration-seconds", type=float, default=300,
+                         help="Polling period in seconds; started body snapshots finish afterward (default: 300)")
+    observe.add_argument("--poll-interval-seconds", type=float, default=60,
+                         help="RSS polling interval in seconds (default: 60)")
+    observe.add_argument("--snapshot-bodies", action="store_true",
+                         help="Fetch and save article body snapshots for newly observed RSS versions")
+    sub.add_parser("observation-status", help="Read saved observation coverage and errors")
+
     details = sub.add_parser("retrieve-details", help="Retrieve and rank source-backed details")
     details.add_argument("--slug", required=True)
     details.add_argument("--cutoff", required=True, help="ISO-8601 timestamp with timezone")
@@ -86,6 +99,19 @@ def parser() -> argparse.ArgumentParser:
 
 
 def run(args: argparse.Namespace) -> dict:
+    if args.command == "observe":
+        import asyncio
+        from .observation import DEFAULT_FEEDS, run_observation
+
+        return asyncio.run(run_observation(
+            args.db, args.slug, args.feed_url if args.feed_url is not None else DEFAULT_FEEDS,
+            args.duration_seconds, args.poll_interval_seconds,
+            snapshot_bodies=args.snapshot_bodies,
+        ))
+    if args.command == "observation-status":
+        from .observation import observation_status
+
+        return observation_status(args.db)
     if args.command == "retrieve-details":
         positive = ("bm25_candidates", "dense_candidates", "fusion_k", "max_clusters",
                     "bodies_per_cluster", "generation_max_input_tokens",
@@ -238,6 +264,11 @@ def main() -> None:
     args = parser().parse_args()
     try:
         print(json.dumps(run(args), indent=2))
+    except KeyboardInterrupt:
+        if args.command != "observe":
+            raise
+        print(json.dumps({"status": "interrupted", "database": str(Path(args.db).resolve())}))
+        raise SystemExit(130)
     except (ValueError, RuntimeError, KeyError, OSError) as exc:
         print(f"error: {exc}", file=sys.stderr)
         raise SystemExit(2)
